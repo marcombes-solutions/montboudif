@@ -1,0 +1,61 @@
+<head>
+  <!-- hint at some preconnections-->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- character set -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- general info -->
+  <meta name="author" content="Marcombes Solutions 2020">
+  <title>La Veysserette</title>
+
+  <link rel="manifest" href="{{.Site.BaseURL}}manifest.json">
+
+  <!--icons / only recent sizes and browsers -->
+  <link rel="shortcut icon" href="{{.Site.BaseURL}}img/icon-64x64.png" type="image/x-icon" sizes="64x64">
+  <link rel="apple-touch-icon" href="{{.Site.BaseURL}}img/apple-touch-icon-180x180-precomposed.png" sizes="180x180">
+  <link rel="shortcut icon" href="{{.Site.BaseURL}}img/icon-196x196.png" sizes="196x196">
+  <meta name="msapplication-config" content="{{.Site.BaseURL}}browserconfig.xml" />
+
+  <!--TODO Finish logo & Check it produces nice cards-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="La Veysserette">
+  <meta property="og:url" content="www.marcombes.fr/la-veysserette">
+  <meta property="og:image" content="{{.Site.BaseURL}}/img/icon-196x196.png">
+  <meta property="business:contact_data:street_address" content="">
+  <meta property="business:contact_data:locality" content="Montboudif">
+  <meta property="business:contact_data:region" content="Cantal">
+  <meta property="business:contact_data:postal_code" content="15190">
+  <meta property="business:contact_data:country_name" content="France">
+
+  <!--TODO Finish logo & Check it produces nice cards-->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@marcombes_fr" />
+  <meta name="twitter:creator" content="@marcombes_fr" />
+  <meta name="twitter:title" content="La Veysserette" />
+  <meta name="twitter:image" content="{{.Site.BaseURL}}img/icon-196x196.png" />
+
+
+  <!-- materialize - load first -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        rel="stylesheet" type="text/css" media="screen,projection">
+
+  <!-- css customisaton - delay load, nothing on page top -->
+  {{ $stylecss := resources.Get "css/style.css" }}
+  {{ $style := $stylecss  | minify }}
+  <link href="{{ $style.Permalink }}" rel="preload" as="style" onload="this.rel='stylesheet'" >
+  <noscript><link rel="stylesheet" type="text/css" href=".{{ $style.RelPermalink }}"></noscript>
+  
+  <!-- icons - delay load, nothing on page top  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+        rel="preload" as="style" onload="this.rel='stylesheet'" >
+  <noscript><link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                  rel="stylesheet"></noscript>
+
+  <!-- css preload -->    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/3.0.0/loadCSS.js"></script>
+
+</head>

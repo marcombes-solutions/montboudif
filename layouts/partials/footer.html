@@ -1,0 +1,36 @@
+<footer class="page-footer white lighten-4">
+
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="brown-text">{{.Site.Params.share}}</h5>
+          <div class="row">
+
+            <div class="col l2"><a class="waves-effect waves-light">{{partial "facebook.svg" .}}</a></div>
+            <div class="col l2"><a class="waves-effect waves-light">{{partial "twitter.svg" .}}</a></div>
+            <div class="col l2"><a class="waves-effect waves-light">{{partial "whatsapp.svg" .}}</a></div>
+            <div class="col l2"><a class="waves-effect waves-light">{{partial "instagram.svg" .}}</a></div>
+          
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="brown-text">{{.Site.Params.links}}</h5>
+          <ul>
+
+          <!-- hugo powered menu-->
+          {{ range .Site.Menus.links -}}
+          <li><a class="brown-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+          {{- end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright and link -->
+    <div class="footer-copyright">
+      <div class="container">
+      <span class="brown-text">© 2020 Montboudif</span> <a class="brown-text right" href="https://www.montboudif.fr">www.montboudif.fr</a>
+      </div>
+    </div>
+  
+  </footer>
