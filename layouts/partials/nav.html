@@ -2,33 +2,33 @@
 <!-- Get global main menu and sort it-->
 {{ $menus := sort .Site.Menus.main "Weight" }}
 
-<!-- navigation - top bar -->  
-<div class="navbar-fixed">
+<!-- navigation - top bar 
+<!-- <div class="navbar-fixed">-->  
   <nav>
-    <div class="nav-wrapper grey lighten-4">
+    <div class="nav-wrapper">
       
       <a href="{{.Site.BaseURL}}" class="brand-logo"><i class="material-icons">photo</i></a>
       <a href="#" data-target="nav-left" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down" id="nav-mobile">
         <!-- hugo powered menu-->
         {{ range $menus -}}
-         <li><a class="brown-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+         <li><a class="grey-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
         {{- end }}
         <!-- language toggle -->
         {{ $url := .URL | relLangURL }}
         {{ if eq .Site.Language.Lang "en" }}
           {{ if .IsHome }}
-           <li><a class="brown-text"   href="{{.Site.BaseURL}}fr/">FR</a></li>
+           <li><a class="grey-text"   href="{{.Site.BaseURL}}fr/">FR</a></li>
           {{ else }}
           {{$url := replace $url "/en/" "/" }}          
-           <li><a class="brown-text"   href="{{.Site.BaseURL}}fr{{$url}}">FR</a></li>
+           <li><a class="grey-text"   href="{{.Site.BaseURL}}fr{{$url}}">FR</a></li>
           {{ end }}
         {{ else }}
           {{ if .IsHome }}
-            <li><a class="brown-text"   href="{{.Site.BaseURL}}en/">EN</a></li>
+            <li><a class="grey-text"   href="{{.Site.BaseURL}}en/">EN</a></li>
           {{ else }}
           {{$url := replace $url "/fr/" "/" }}
-           <li><a class="brown-text"   href="{{.Site.BaseURL}}en{{$url}}">EN</a></li>
+           <li><a class="grey-text"   href="{{.Site.BaseURL}}en{{$url}}">EN</a></li>
         {{ end }}
       {{ end }}
 
@@ -41,29 +41,29 @@
     </div>
     </div>
   </nav>  
-</div>
+<!--</div>-->
 
 <!-- navigation mobile - side bar -->  
-<ul class="sidenav  grey lighten-5" id="nav-left">
+<ul class="sidenav " id="nav-left">
   <!-- hugo powered menu-->
   {{ range $menus -}}
-  <li><a class="brown-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+  <li><a class="grey-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
   {{- end }}
   <!-- language toggle -->
   {{ $url := .URL | relLangURL }}
   {{ if eq .Site.Language.Lang "en" }}
     {{ if .IsHome }}
-      <li><a  class="brown-text"  href="{{.Site.BaseURL}}fr/">Français</a></li>
+      <li><a  class="grey-text"  href="{{.Site.BaseURL}}fr/">Français</a></li>
     {{ else }}
       {{$url := replace $url "/en/" "/" }}
-      <li><a  class="brown-text"  href="{{.Site.BaseURL}}fr{{$url}}">Français</a></li>
+      <li><a  class="grey-text"  href="{{.Site.BaseURL}}fr{{$url}}">Français</a></li>
     {{ end }}
   {{ else }}
     {{ if .IsHome }}
-      <li><a class="brown-text"   href="{{.Site.BaseURL}}en/">English</a></li>
+      <li><a class="grey-text"   href="{{.Site.BaseURL}}en/">English</a></li>
     {{ else }}
       {{$url := replace $url "/fr/" "/" }}
-      <li><a class="brown-text"   href="{{.Site.BaseURL}}en{{$url}}">English</a></li>
+      <li><a class="grey-text"   href="{{.Site.BaseURL}}en{{$url}}">English</a></li>
     {{ end }}
   {{ end }}
 </ul>
