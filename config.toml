@@ -1,5 +1,5 @@
 
-#baseURL = "https://marcombes-solutions.github.io/montboudif/public/"
+baseURL = "https://marcombes-solutions.github.io/montboudif/public/"
 title = "Montboudif"
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = "true"
