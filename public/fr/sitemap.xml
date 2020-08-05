@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcombes-solutions.github.io/montboudif/fr/categories/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://marcombes-solutions.github.io/montboudif/en/categories/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://marcombes-solutions.github.io/montboudif/fr/categories/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://marcombes-solutions.github.io/montboudif/fr/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://marcombes-solutions.github.io/montboudif/en/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://marcombes-solutions.github.io/montboudif/fr/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/"
                 />
   </url>
   
   <url>
-    <loc>https://marcombes-solutions.github.io/montboudif/fr/tags/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://marcombes-solutions.github.io/montboudif/en/tags/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://marcombes-solutions.github.io/montboudif/fr/tags/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/tags/"
                 />
   </url>
   
