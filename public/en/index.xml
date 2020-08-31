@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>La Veysserette on Montboudif</title>
-    <link>https://marcombes-solutions.github.io/montboudif/public/en/</link>
-    <description>Recent content in La Veysserette on Montboudif</description>
+    <title>Montboudif</title>
+    <link>http://montboudif.test/en/</link>
+    <description>Recent content on Montboudif</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://marcombes-solutions.github.io/montboudif/public/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://montboudif.test/en/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

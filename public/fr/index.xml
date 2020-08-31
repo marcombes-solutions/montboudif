@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Montboudif</title>
-    <link>https://marcombes-solutions.github.io/montboudif/public/fr/</link>
+    <link>http://montboudif.test/fr/</link>
     <description>Recent content on Montboudif</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://marcombes-solutions.github.io/montboudif/public/fr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://montboudif.test/fr/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

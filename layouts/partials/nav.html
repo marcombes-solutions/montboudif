@@ -12,23 +12,23 @@
       <ul class="right hide-on-med-and-down" id="nav-mobile">
         <!-- hugo powered menu-->
         {{ range $menus -}}
-         <li><a class="grey-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+         <li><a class="grey-text text-lighten-2"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
         {{- end }}
         <!-- language toggle -->
         {{ $url := .URL | relLangURL }}
         {{ if eq .Site.Language.Lang "en" }}
           {{ if .IsHome }}
-           <li><a class="grey-text"   href="{{.Site.BaseURL}}fr/">FR</a></li>
+           <li><a class="flag" href="{{.Site.BaseURL}}fr/"><img src="{{.Site.BaseURL}}img/fr_small.png"></a></li>
           {{ else }}
           {{$url := replace $url "/en/" "/" }}          
-           <li><a class="grey-text"   href="{{.Site.BaseURL}}fr{{$url}}">FR</a></li>
+           <li><a class="flag" href="{{.Site.BaseURL}}fr{{$url}}"><img src="{{.Site.BaseURL}}img/fr_small.png"></a></li>
           {{ end }}
         {{ else }}
           {{ if .IsHome }}
-            <li><a class="grey-text"   href="{{.Site.BaseURL}}en/">EN</a></li>
+            <li><a class="flag" href="{{.Site.BaseURL}}en/"><img src="{{.Site.BaseURL}}img/uk_small.png"></a></li>
           {{ else }}
           {{$url := replace $url "/fr/" "/" }}
-           <li><a class="grey-text"   href="{{.Site.BaseURL}}en{{$url}}">EN</a></li>
+           <li><a class="flag" href="{{.Site.BaseURL}}en{{$url}}"><img src="{{.Site.BaseURL}}img/uk_small.png"></a></li>
         {{ end }}
       {{ end }}
 
@@ -47,23 +47,23 @@
 <ul class="sidenav " id="nav-left">
   <!-- hugo powered menu-->
   {{ range $menus -}}
-  <li><a class="grey-text"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+  <li><a class="grey-text text-lighten-2"  href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
   {{- end }}
   <!-- language toggle -->
   {{ $url := .URL | relLangURL }}
   {{ if eq .Site.Language.Lang "en" }}
     {{ if .IsHome }}
-      <li><a  class="grey-text"  href="{{.Site.BaseURL}}fr/">Français</a></li>
+      <li><a  class="grey-text text-lighten-2"  href="{{.Site.BaseURL}}fr/">Français</a></li>
     {{ else }}
       {{$url := replace $url "/en/" "/" }}
-      <li><a  class="grey-text"  href="{{.Site.BaseURL}}fr{{$url}}">Français</a></li>
+      <li><a  class="grey-text text-lighten-2"  href="{{.Site.BaseURL}}fr{{$url}}">Français</a></li>
     {{ end }}
   {{ else }}
     {{ if .IsHome }}
       <li><a class="grey-text"   href="{{.Site.BaseURL}}en/">English</a></li>
     {{ else }}
       {{$url := replace $url "/fr/" "/" }}
-      <li><a class="grey-text"   href="{{.Site.BaseURL}}en{{$url}}">English</a></li>
+      <li><a class="grey-text text-lighten-2"   href="{{.Site.BaseURL}}en{{$url}}">English</a></li>
     {{ end }}
   {{ end }}
 </ul>

@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>https://marcombes-solutions.github.io/montboudif/public/en/sitemap.xml</loc>
+	   	<loc>http://montboudif.test/en/sitemap.xml</loc>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>https://marcombes-solutions.github.io/montboudif/public/fr/sitemap.xml</loc>
+	   	<loc>http://montboudif.test/fr/sitemap.xml</loc>
 		
 	</sitemap>
 	
