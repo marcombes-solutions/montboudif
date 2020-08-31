@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://montboudif.test/en/categories/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://montboudif.test/fr/categories/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://montboudif.test/en/categories/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://montboudif.test/en/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://montboudif.test/fr/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://montboudif.test/en/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/"
                 />
   </url>
   
   <url>
-    <loc>http://montboudif.test/en/tags/</loc>
+    <loc>https://marcombes-solutions.github.io/montboudif/public/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://montboudif.test/fr/tags/"
+                href="https://marcombes-solutions.github.io/montboudif/public/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://montboudif.test/en/tags/"
+                href="https://marcombes-solutions.github.io/montboudif/public/en/tags/"
                 />
   </url>
   
