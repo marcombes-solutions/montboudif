@@ -10,7 +10,7 @@
   }
     .main-section{
       display: inline-block;
-      background:  -webkit-linear-gradient(top, rgba(254,254,254,0) 0%, rgba(100,115,100,0.8) 100%), url(../../img/panorama.jpg);     
+      background:  -webkit-linear-gradient(top, rgba(254,254,254,0) 0%, rgba(100,115,100,0.8) 100%), url(../img/panorama.jpg);     
       background-position: center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
